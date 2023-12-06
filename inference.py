@@ -32,6 +32,7 @@ test_imgs = random_elements = sample(all_imgs, 5)
 with custom_object_scope({'FocalLoss': FocalLoss, 'dice_coef': dice_coef}):
     fullres_model = keras.models.load_model('fullres_model.keras')
 
+
 #visualize prediction
 for i in range(len(test_imgs)):
     img, pred = gen_pred(TEST_DIR, test_imgs[i], fullres_model)

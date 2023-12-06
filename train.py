@@ -6,6 +6,7 @@ from skimage.io import imread
 from keras.preprocessing.image import ImageDataGenerator
 from keras import models, layers
 from keras.optimizers import Adam
+from keras.optimizers import legacy
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 from matplotlib import pyplot as plt
 from utils import FocalLoss, dice_coef, masks_as_image
@@ -75,7 +76,7 @@ def upsample_simple(filters, kernel_size, strides, padding):
 
 
 def fit():
-    seg_model.compile(optimizer=Adam(1e-3, decay=1e-6), loss=FocalLoss, metrics=[dice_coef])
+    seg_model.compile(optimizer=legacy.Adam(1e-3, decay=1e-6), loss=FocalLoss, metrics=[dice_coef])
 
     step_count = min(MAX_TRAIN_STEPS, train_df.shape[0] // BATCH_SIZE)
     aug_gen = create_aug_gen(make_image_gen(train_df))
