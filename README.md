@@ -22,8 +22,8 @@ This project is about finding ships in satellite images using machine learning a
 ### Getting Started
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/Airbus_ship_Detection_Challenge.git
-   cd Airbus_ship_Detection_Challenge
+   git clone https://github.com/MaksymKashuba/airbus-ship-detection-challenge-kaggle.git
+   cd airbus-ship-detection-challenge-kaggle
    ```
 
 2. **Set Up the Environment**:
