@@ -51,7 +51,4 @@ This project is about finding ships in satellite images using machine learning a
    ```
 
 6. **Analyze Results**:
-   Open the Jupyter notebooks for analysis:
-   ```bash
-   jupyter notebook
-   ```
+   Open the Jupyter Notebook interface to analyze the results. Use the provided notebooks (`analysis.ipynb` and `test.ipynb`) for data analysis and model evaluation.
