@@ -18,3 +18,40 @@ This project is about finding ships in satellite images using machine learning a
 - **Data Handling**: NumPy, Pandas
 - **Image Processing**: OpenCV, Scikit-Image
 - **Visualization**: Matplotlib
+
+### Getting Started
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-repo/Airbus_ship_Detection_Challenge.git
+   cd Airbus_ship_Detection_Challenge
+   ```
+
+2. **Set Up the Environment**:
+   Create a virtual environment and install the required dependencies:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+3. **Prepare the Data**:
+   - Download the dataset from the Kaggle competition page.
+   - Extract the dataset into the `data/` directory.
+
+4. **Train the Model**:
+   Run the training script:
+   ```bash
+   python train.py
+   ```
+
+5. **Generate Predictions**:
+   Use the inference script to make predictions:
+   ```bash
+   python inference.py
+   ```
+
+6. **Analyze Results**:
+   Open the Jupyter notebooks for analysis:
+   ```bash
+   jupyter notebook
+   ```
